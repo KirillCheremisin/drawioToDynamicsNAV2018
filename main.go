@@ -70,16 +70,7 @@ func main() {
 	}
 
 	for i := 0; i < len(tables); i++ {
-		fmt.Println("Table ", tables[i].Id, " ", tables[i].Name)
-		for j := 0; j < len(tables[i].Fields); j++ {
-			fmt.Print("Field: ")
-			fmt.Println(tables[i].Fields[j].Id)
-			fmt.Print("Is primary: ")
-			fmt.Println(tables[i].Fields[j].IsInPrimaryKey)
-			fmt.Print("Name: ")
-			fmt.Println(tables[i].Fields[j].Name)
-		}
-		fmt.Println()
+		tables[i].Print()
 	}
 
 	fmt.Scanln()
