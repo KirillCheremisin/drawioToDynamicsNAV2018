@@ -2,12 +2,14 @@ package model
 
 import "fmt"
 
+// Field in a table
 type Nav2018Field struct {
 	Id             int
 	IsInPrimaryKey bool
 	Name           string
 }
 
+// DB Table
 type Nav2018Table struct {
 	Id     int
 	Name   string
