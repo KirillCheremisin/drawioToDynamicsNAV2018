@@ -7,7 +7,7 @@ import (
 	"io/ioutil"
 	"os"
 
-	projModel "./model"
+	projModel "drawioToDynamicsNAV2018/model"
 )
 
 func main() {
