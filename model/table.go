@@ -3,20 +3,20 @@ package model
 import "fmt"
 
 // Field in a table
-type Nav2018Field struct {
+type Field struct {
 	Id             int
 	IsInPrimaryKey bool
 	Name           string
 }
 
 // DB Table
-type Nav2018Table struct {
+type Table struct {
 	Id     int
 	Name   string
-	Fields []*Nav2018Field
+	Fields []*Field
 }
 
-func (table Nav2018Table) Print() {
+func (table Table) Print() {
 	fmt.Println("Table ", table.Id, " ", table.Name)
 	for j := 0; j < len(table.Fields); j++ {
 		fmt.Print("Field: ")

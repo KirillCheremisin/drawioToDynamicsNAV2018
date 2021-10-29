@@ -6,7 +6,7 @@ import "fmt"
 type DrawIODiagram struct {
 }
 
-func (table DrawIODiagram) ParseDiagram(mxfile Mxfile) (tables []Nav2018Table) {
+func (table DrawIODiagram) ParseDiagram(mxfile Mxfile) (tables []Table) {
 	var tableContainerId string
 	var fieldContainerId string
 	var tableId int
@@ -18,7 +18,7 @@ func (table DrawIODiagram) ParseDiagram(mxfile Mxfile) (tables []Nav2018Table) {
 	var cellId string
 	var cellParent string
 
-	tables = make([]Nav2018Table, 0)
+	tables = make([]Table, 0)
 	for i := 0; i < len(mxfile.Diagrams[0].MxGraphModel.MxCells); i++ {
 		cellValue = mxfile.Diagrams[0].MxGraphModel.MxCells[i].Value
 		cellId = mxfile.Diagrams[0].MxGraphModel.MxCells[i].Id
@@ -30,7 +30,7 @@ func (table DrawIODiagram) ParseDiagram(mxfile Mxfile) (tables []Nav2018Table) {
 			tableContainerId = cellId
 
 			fmt.Println("Create new table ", cellValue)
-			var newTable Nav2018Table
+			var newTable Table
 			newTable.Id = tableId
 			newTable.Name = cellValue
 
@@ -47,7 +47,7 @@ func (table DrawIODiagram) ParseDiagram(mxfile Mxfile) (tables []Nav2018Table) {
 			}
 
 			if PKProperty {
-				newField := new(Nav2018Field)
+				newField := new(Field)
 				if cellValue == "PK" {
 					newField.IsInPrimaryKey = true
 				}
