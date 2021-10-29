@@ -21,6 +21,11 @@ func main() {
 		tables[i].Print()
 	}
 
+	var nav2018TableExporter projModel.Nav2018TableExporter
+	for i := 0; i < len(tables); i++ {
+		nav2018TableExporter.ExportTable(tables[i])
+	}
+
 	fmt.Scanln()
 }
 
