@@ -1,6 +1,6 @@
 package model
 
-type TableExporter struct {
+type Nav2018TableExporter struct {
 }
 
-func (table TableExporter) ExportTable([]Field) {}
+func (table Nav2018TableExporter) ExportTable([]Field) {}
