@@ -9,6 +9,13 @@ type MxCell struct {
 	Parent  string   `xml:"parent,attr"`
 }
 
+type MxObject struct {
+	XMLName xml.Name `xml:"object"`
+	Label   string   `xml:"label,attr"`
+	Caption string   `xml:"Caption,attr"`
+	Id      string   `xml:"id,attr"`
+	MxCell  *MxCell  `xml:"mxCell"`
+}
 type MxGraphModel struct {
 	XMLName   xml.Name  `xml:"mxGraphModel"`
 	MxCells   []*MxCell `xml:"root>mxCell"`

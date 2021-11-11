@@ -1,12 +1,22 @@
 package model
 
-import "fmt"
+import (
+	"encoding/xml"
+	"fmt"
+	"io/ioutil"
+	"os"
+)
 
 // Diagram exported from draw.io web site
 type DrawIODiagram struct {
 }
 
-func (table DrawIODiagram) ParseDiagram(mxfile Mxfile) (tables []Table) {
+func (table DrawIODiagram) ParseDiagram(fileName string) (tables []Table) {
+
+	byteValue := LoadFile(fileName)
+	var mxfile = UnmarshalData(byteValue)
+	fmt.Println(mxfile)
+
 	var tableContainerId string
 	var fieldContainerId string
 	var tableId int
@@ -61,4 +71,25 @@ func (table DrawIODiagram) ParseDiagram(mxfile Mxfile) (tables []Table) {
 		}
 	}
 	return tables
+}
+
+func LoadFile(fileName string) []byte {
+	dataFile, err := os.Open(fileName)
+	if err != nil {
+		panic(err)
+	}
+	defer dataFile.Close()
+
+	byteValue, _ := ioutil.ReadAll(dataFile)
+	return byteValue
+}
+
+func UnmarshalData(byteValue []byte) Mxfile {
+	var mxfile Mxfile
+	err := xml.Unmarshal(byteValue, &mxfile)
+	if err != nil {
+		panic(err)
+	}
+
+	return mxfile
 }

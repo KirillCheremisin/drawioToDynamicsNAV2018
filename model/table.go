@@ -7,6 +7,7 @@ type Field struct {
 	Id             int
 	IsInPrimaryKey bool
 	Name           string
+	XmlID          string
 }
 
 // DB Table
@@ -14,6 +15,7 @@ type Table struct {
 	Id     int
 	Name   string
 	Fields []*Field
+	XmlID  string
 }
 
 func (table Table) Print() {
