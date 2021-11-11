@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="srv-confluence" modified="2021-10-25T08:59:05.311Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36" etag="Y36b8SsSXFiV3q67nO2x" version="12.3.4" type="atlas" pages="1">
+	<mxAtlasLibraries/>
+	<diagram id="_kkY1emZAjDccJdXO2ws" name="Страница 1">
+		<mxGraphModel dx="2222" dy="1528" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+			<root>
+				<mxCell id="0"/>
+				<mxCell id="1" parent="0"/>
+				
+				<object label="3. Risk Metric Type" Caption="Тип рисковой метрики" id="Xi49vFWvGVr5LlVf-Zr--61">
+					<mxCell style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#dae8fc;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;swimlaneFillColor=#ffffff;align=center;fontSize=14;strokeColor=#6c8ebf;" parent="1" vertex="1">
+						<mxGeometry x="1020" y="171.83331298828125" width="200" height="108" as="geometry"/>
+					</mxCell>
+				</object>
+				<mxCell id="Xi49vFWvGVr5LlVf-Zr--62" value="ID (int)" style="shape=partialRectangle;top=0;left=0;right=0;bottom=1;align=left;verticalAlign=middle;fillColor=none;spacingLeft=34;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;dropTarget=0;fontStyle=5;fontSize=12;" parent="Xi49vFWvGVr5LlVf-Zr--61" vertex="1">
+					<mxGeometry y="26" width="200" height="30" as="geometry"/>
+				</mxCell>
+				<mxCell id="Xi49vFWvGVr5LlVf-Zr--63" value="PK" style="shape=partialRectangle;top=0;left=0;bottom=0;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[];portConstraint=eastwest;part=1;fontSize=12;" parent="Xi49vFWvGVr5LlVf-Zr--62" vertex="1" connectable="0">
+					<mxGeometry width="30" height="30" as="geometry"/>
+				</mxCell>
+				<mxCell id="Xi49vFWvGVr5LlVf-Zr--64" value="Name (string[50])" style="shape=partialRectangle;top=0;left=0;right=0;bottom=0;align=left;verticalAlign=top;fillColor=none;spacingLeft=34;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;dropTarget=0;fontSize=12;" parent="Xi49vFWvGVr5LlVf-Zr--61" vertex="1">
+					<mxGeometry y="56" width="200" height="26" as="geometry"/>
+				</mxCell>
+				<mxCell id="Xi49vFWvGVr5LlVf-Zr--65" value="" style="shape=partialRectangle;top=0;left=0;bottom=0;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[];portConstraint=eastwest;part=1;fontSize=12;" parent="Xi49vFWvGVr5LlVf-Zr--64" vertex="1" connectable="0">
+					<mxGeometry width="30" height="26" as="geometry"/>
+				</mxCell>
+				<mxCell id="Xi49vFWvGVr5LlVf-Zr--66" value="Life Time (duration)" style="shape=partialRectangle;top=0;left=0;right=0;bottom=0;align=left;verticalAlign=top;fillColor=none;spacingLeft=34;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;dropTarget=0;fontSize=12;" parent="Xi49vFWvGVr5LlVf-Zr--61" vertex="1">
+					<mxGeometry y="82" width="200" height="26" as="geometry"/>
+				</mxCell>
+				<mxCell id="Xi49vFWvGVr5LlVf-Zr--67" value="" style="shape=partialRectangle;top=0;left=0;bottom=0;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[];portConstraint=eastwest;part=1;fontSize=12;" parent="Xi49vFWvGVr5LlVf-Zr--66" vertex="1" connectable="0">
+					<mxGeometry width="30" height="26" as="geometry"/>
+				</mxCell>
+			</root>
+		</mxGraphModel>
+	</diagram>
+</mxfile>
