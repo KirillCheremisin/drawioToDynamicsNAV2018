@@ -3,14 +3,13 @@ package model
 import (
 	"fmt"
 	"io"
-	"os"
 )
 
 type Nav2018TableExporter struct {
 }
 
-func (Nav2018TableExporter) ExportTable(table Table) {
-	writer := os.Stdout
+func (Nav2018TableExporter) ExportTable(table Table, writer io.Writer) {
+	//writer := os.Stdout
 
 	fmt.Fprintf(writer, "OBJECT Table %d %s\n", table.Id, table.Name)
 	fmt.Fprintln(writer, "{")

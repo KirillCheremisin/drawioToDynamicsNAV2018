@@ -5,6 +5,7 @@ import (
 	"drawioToDynamicsNAV2018/interfaces"
 	projModel "drawioToDynamicsNAV2018/model"
 	"fmt"
+	"os"
 )
 
 func main() {
@@ -17,8 +18,9 @@ func main() {
 	}
 
 	var nav2018TableExporter projModel.Nav2018TableExporter
+	writer := os.Stdout
 	for i := 0; i < len(tables); i++ {
-		nav2018TableExporter.ExportTable(tables[i])
+		nav2018TableExporter.ExportTable(tables[i], writer)
 	}
 
 	fmt.Scanln()
