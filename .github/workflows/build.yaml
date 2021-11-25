@@ -7,5 +7,5 @@ jobs:
   Hello:
     runs-on: ubuntu-18.04
     steps:
-      -name: Hello world
+      - name: Hello world
       run: echo "Hello world"
