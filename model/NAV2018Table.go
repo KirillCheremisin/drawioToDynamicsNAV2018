@@ -18,7 +18,6 @@ func (Nav2018TableExporter) ExportTable(table Table) {
 
 	ExportFields(writer, table)
 	ExportPrimaryKey(writer, table)
-
 }
 
 func ExportFields(writer io.Writer, table Table) {
@@ -34,7 +33,7 @@ func ExportField(writer io.Writer, field Field) {
 	fmt.Fprintf(
 		writer,
 		"{ %d ;%s ;%s ; DataClassification=ToBeClassified }\n",
-		field.Id, field.Name, field.Name)
+		field.Id, field.Name, field.Type+field.Length)
 }
 
 func ExportPrimaryKey(writer io.Writer, table Table) {
@@ -58,5 +57,4 @@ func ExportPrimaryKey(writer io.Writer, table Table) {
 	}
 
 	fmt.Fprintf(writer, "{  ;%s ;Clustered=Yes }\n", PK)
-
 }

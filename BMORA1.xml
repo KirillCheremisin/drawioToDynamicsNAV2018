@@ -12,19 +12,19 @@
 						<mxGeometry x="1020" y="171.83331298828125" width="200" height="108" as="geometry"/>
 					</mxCell>
 				</object>
-				<mxCell id="Xi49vFWvGVr5LlVf-Zr--62" value="ID (int)" style="shape=partialRectangle;top=0;left=0;right=0;bottom=1;align=left;verticalAlign=middle;fillColor=none;spacingLeft=34;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;dropTarget=0;fontStyle=5;fontSize=12;" parent="Xi49vFWvGVr5LlVf-Zr--61" vertex="1">
+				<mxCell id="Xi49vFWvGVr5LlVf-Zr--62" value="ID: Integer" style="shape=partialRectangle;top=0;left=0;right=0;bottom=1;align=left;verticalAlign=middle;fillColor=none;spacingLeft=34;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;dropTarget=0;fontStyle=5;fontSize=12;" parent="Xi49vFWvGVr5LlVf-Zr--61" vertex="1">
 					<mxGeometry y="26" width="200" height="30" as="geometry"/>
 				</mxCell>
 				<mxCell id="Xi49vFWvGVr5LlVf-Zr--63" value="PK" style="shape=partialRectangle;top=0;left=0;bottom=0;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[];portConstraint=eastwest;part=1;fontSize=12;" parent="Xi49vFWvGVr5LlVf-Zr--62" vertex="1" connectable="0">
 					<mxGeometry width="30" height="30" as="geometry"/>
 				</mxCell>
-				<mxCell id="Xi49vFWvGVr5LlVf-Zr--64" value="Name (string[50])" style="shape=partialRectangle;top=0;left=0;right=0;bottom=0;align=left;verticalAlign=top;fillColor=none;spacingLeft=34;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;dropTarget=0;fontSize=12;" parent="Xi49vFWvGVr5LlVf-Zr--61" vertex="1">
+				<mxCell id="Xi49vFWvGVr5LlVf-Zr--64" value="Name: Text[50]" style="shape=partialRectangle;top=0;left=0;right=0;bottom=0;align=left;verticalAlign=top;fillColor=none;spacingLeft=34;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;dropTarget=0;fontSize=12;" parent="Xi49vFWvGVr5LlVf-Zr--61" vertex="1">
 					<mxGeometry y="56" width="200" height="26" as="geometry"/>
 				</mxCell>
 				<mxCell id="Xi49vFWvGVr5LlVf-Zr--65" value="" style="shape=partialRectangle;top=0;left=0;bottom=0;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[];portConstraint=eastwest;part=1;fontSize=12;" parent="Xi49vFWvGVr5LlVf-Zr--64" vertex="1" connectable="0">
 					<mxGeometry width="30" height="26" as="geometry"/>
 				</mxCell>
-				<mxCell id="Xi49vFWvGVr5LlVf-Zr--66" value="Life Time (duration)" style="shape=partialRectangle;top=0;left=0;right=0;bottom=0;align=left;verticalAlign=top;fillColor=none;spacingLeft=34;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;dropTarget=0;fontSize=12;" parent="Xi49vFWvGVr5LlVf-Zr--61" vertex="1">
+				<mxCell id="Xi49vFWvGVr5LlVf-Zr--66" value="Life Time: Duration" style="shape=partialRectangle;top=0;left=0;right=0;bottom=0;align=left;verticalAlign=top;fillColor=none;spacingLeft=34;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;dropTarget=0;fontSize=12;" parent="Xi49vFWvGVr5LlVf-Zr--61" vertex="1">
 					<mxGeometry y="82" width="200" height="26" as="geometry"/>
 				</mxCell>
 				<mxCell id="Xi49vFWvGVr5LlVf-Zr--67" value="" style="shape=partialRectangle;top=0;left=0;bottom=0;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[];portConstraint=eastwest;part=1;fontSize=12;" parent="Xi49vFWvGVr5LlVf-Zr--66" vertex="1" connectable="0">

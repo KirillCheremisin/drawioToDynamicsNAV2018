@@ -7,6 +7,8 @@ type Field struct {
 	Id             int
 	IsInPrimaryKey bool
 	Name           string
+	Type           string
+	Length         string
 	XmlID          string
 }
 

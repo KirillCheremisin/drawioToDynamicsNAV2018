@@ -13,3 +13,6 @@
 
 # Dependency directories (remove the comment below to include it)
 # vendor/
+.vs/slnx.sqlite
+.vs/VSWorkspaceState.json
+.vs/drawioToDynamicsNAV2018/v16/.suo
